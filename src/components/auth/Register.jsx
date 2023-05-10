@@ -12,7 +12,75 @@ const Register = () => {
                           </h2>
                       </div>
                       <form>
-                          <div>
+                          <div className='form-group mt-3'>
+                              <label htmlFor='' className='text-white mb-2'>نام شما</label>
+                              <input
+                              type="text"
+                              className='form-control mb-1'
+                              name='name'
+                              />
+                              
+
+
+                          </div>
+                          <div className='form-group mt-3'>
+                              <label htmlFor='' className='text-white mb-2'>نام خانوادگی</label>
+                              <input
+                              type="text"
+                              className='form-control mb-1'
+                              name='lastName'
+                              />
+                              
+                          </div>
+                          <div className='form-group mt-3'>
+                              <label htmlFor='' className='text-white mb-2'>ایمیل </label>
+                              <input
+                              type="text"
+                              className='form-control mb-1'
+                              name='email'
+                              />
+
+                              
+                          </div>
+                          <div className='form-group mt-3'>
+                              <label htmlFor='' className='text-white mb-2'>رمز عبور </label>
+                              <input
+                              type="text"
+                              className='form-control mb-1'
+                              name='password'
+                              />
+
+                              
+                          </div>
+
+                          <div className='form-group mt-3'>
+                              <label htmlFor='' className='text-white mb-2'>شماره تماس </label>
+                              <input
+                              type="text"
+                              className='form-control mb-1'
+                              name='phoneNameber'
+                              />
+                              
+                              
+                          </div>
+                          <div className='form-group mt-3'>
+                              <label htmlFor='' className='text-white mb-2'>شماره تماس </label>
+                              <input
+                              type="text"
+                              className='form-control mb-1'
+                              name='phoneNameber'
+                              />
+                              
+                              
+                          </div>
+                          <div className='form-group mt-3'>
+                              <label htmlFor='' className='text-white mb-2'>آدرس  </label>
+                              <input
+                              type="text"
+                              className='form-control mb-1'
+                              name='Adress'
+                              />
+                              
                               
                           </div>
                       </form>
