@@ -21,6 +21,7 @@ const Navbar = () => {
                    <li><a href="">امکانات</a></li>
                    <li><a href="">دانلود</a></li>
                    <li><a href="">مشترک شوید</a></li>
+                   <li><a href=""> ورود</a></li>
                </ul>
 
            </div>
