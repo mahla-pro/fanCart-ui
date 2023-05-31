@@ -1,6 +1,19 @@
-import React from 'react';
+import React , {useState} from 'react';
+import './auth.css';
+import axios from 'axios';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
+     const [name,setName] = useState("");
+     const [lastName,setLastName] = useState("");
+     const [email,setEmail] = useState("");
+     const [password,setPassword] = useState("");
+     const [phoneNameber,setPhoneNameber] = useState("");
+     const [Adress,setAdress] = useState("");
+
+
+
     return (
         <div className='auth register'>
             <div className='container'>
@@ -63,16 +76,7 @@ const Register = () => {
                               
                               
                           </div>
-                          <div className='form-group mt-3'>
-                              <label htmlFor='' className='text-white mb-2'>شماره تماس </label>
-                              <input
-                              type="text"
-                              className='form-control mb-1'
-                              name='phoneNameber'
-                              />
-                              
-                              
-                          </div>
+                  
                           <div className='form-group mt-3'>
                               <label htmlFor='' className='text-white mb-2'>آدرس  </label>
                               <input
@@ -82,6 +86,19 @@ const Register = () => {
                               />
                               
                               
+                          </div>
+
+
+                          <div className='form-group mt-3'>
+                              {/* <label htmlFor='' className='text-white mb-2'>آدرس  </label> */}
+                              <input type="radio" value="owner" name="userType"/> صاحب کسب و کار
+                              <input type="radio" value="user" name="userType"/> کاربر استفاده کننده
+                              
+                          </div>
+
+                          <div className='form-group mt-4'>
+                              <button type='submit' className='btn btn-success w-100' >ثبت نام</button>
+
                           </div>
                       </form>
 

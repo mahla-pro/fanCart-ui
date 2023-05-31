@@ -3,6 +3,7 @@ import { BsCardHeading } from "react-icons/bs";
 import {AiOutlineBars} from "react-icons/ai";
 import {RiCloseLine} from "react-icons/ri";
 import './Navbar.css';
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -16,12 +17,27 @@ const Navbar = () => {
        <nav className='navbar container'>
            <div className='menuu'>
                <ul className='nav-link' id={showIcon ? "show-linkes-mobile" : "show-linkes-mobile-hide"} >
-                   <li><a href="" className='btn btn-dark'>خانه</a></li>
-                   <li><a href="">آموزش</a></li>
-                   <li><a href="">امکانات</a></li>
-                   <li><a href="">دانلود</a></li>
-                   <li><a href="">مشترک شوید</a></li>
-                   <li><a href=""> ورود</a></li>
+                   <li className="nav-item">
+                       {/* <a href="" className='btn btn-dark'>خانه</a> */}
+                      <NavLink className='nav-link'  to="/">خانه</NavLink>
+                       </li>
+                   <li className="nav-item">
+                       <NavLink className='nav-link'  to="/">آموزش</NavLink>
+                    </li>
+                   <li className="nav-item">
+                       <NavLink className='nav-link'  to="/">امکانات</NavLink>
+                       </li>
+                   <li className="nav-item">
+                       <NavLink className='nav-link'  to="/">دانلود</NavLink>
+                       </li>
+                   
+                   <li className="nav-item">
+                
+                       <NavLink  className="nav-link" to="/register" >مشترک شوید</NavLink>
+                       </li>
+                   <li className="nav-item">
+                       <NavLink  className="nav-link" to="/register"> ورود</NavLink>
+                       </li>
                </ul>
 
            </div>
